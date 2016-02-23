@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>venta de vehiculos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="Jquery/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="Jquery/jquerymobile45/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/coches.js"></script>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="Jquery/jquerymobile45/jquery.mobile-1.4.5.min.css">
+       
+    </head>
+<body>
+   <div id="Mipagina" data-role="page">
+        <div id="cabecera" data-role="header">
+        <h2>MI APLICACION</h2>
+       </div>
+       <div id="contenido" data-role="content">
+           <br>
+                <ul data-role="listview">
+           
+                    <li><a href="#agregarcoches">Añadir coche</a></li>
+                    <li><a href="#listarcoche">Ver vehiculos</a></li>
+                    <li><a href="#descuentos">Hacer descuentos</a></li>
+                 
+                </ul>
+       </div>
+       
+       <div id="pie" data-role="footer">
+       </div>
+    
+    </div> 
+    <div id="agregarcoches" data-role="dialog">
+       <center> <h2>Agregar</h2></center>
+		   <input type="text" id="marca" name="marca" placeholder="marca...">
+           <input type="text" id="modelo" name="modelo" placeholder="modelo...">
+           <input type="text" id="anio" name="anio" placeholder="año...">
+           <input type="text" id="ejes" name="ejes" placeholder="ejes...">
+           <input type="text" id="cilindrada" name="cilindrada" placeholder="cilindrada...">
+           <input type="text" id="valor" name="valor" placeholder="valor...">
+           <select id="tipo" name="tipo" data-icon="plus">
+           		<option value="tipo">tipo</option>
+           		<option value="automovil">automovil</option>
+           		<option value="moto">moto</option>
+           		<option value="bus">bus</option>
+           		<option value="camion">camion</option>
+           </select>
+           <select id="cogefoto" name="cogefoto" data-icon="plus">
+           		<option value="desconocido.png">elija foto</option>
+           		<option value="aston.png">aston</option>
+           		<option value="audi.png">audi</option>
+           		<option value="bentley.jpg">bentley</option>
+           		<option value="bugatti.png">bugatti</option>
+           		<option value="derbi.jpg">derbi</option>
+           		<option value="ferrari.png">ferrari</option>
+           		<option value="lamborgini.jpg">lamborghini</option>
+           		<option value="man.jpg">man</option>
+           		<option value="mazda.jpg">mazda</option>
+           		<option value="rieju.jpg">rieju</option>
+           		<option value="subaru.jpg">subaru</option>
+           		<option value="suzuki.png">suzuki</option>
+           		<option value="toyota.png">toyota</option>
+           		<option value="volvo.jpg">volvo</option>
+           		<option value="yamaha.png">yamaha</option>
+           </select><img id="fotocoche" class="fotos" src="img/desconocido.png">
+           <input type="button" data-icon="cloud" id="guardar" value="guardar">
+           <input type="button" data-icon="home" class="volver" value="home">
+    </div>
+    
+    <div id="borrarcoches" data-role="dialog">
+           parte de borrar
+    </div>
+    
+    <div id="listarcoche" data-role="dialog">
+    <div id="cabecera" data-role="header">
+    <center>
+    	<input type="button" data-icon="arrow-d" id="listar" value="listar">
+    	<input type="button" data-icon="arrow-d" id="listamarca" value="por marca">
+   		<input type="button" data-icon="arrow-d" id="listapotencia" value="por potencia">
+    	<input type="button" data-icon="arrow-d" id="listaanio" value="por año">
+    	<input type="button" data-icon="star" id="barato" value="barato">
+   		<input type="button" data-icon="star" id="antiguo" value="antiguo">
+    	<input type="button" data-icon="star" id="potente" value="potente">
+        <input type="text" id="busquedas" placeholder="buscar por modelo o año">
+        </center>
+    </div>
+    	<div id="listado"></div>
+    	<input type="button" data-icon="home" class="volver" value="home">
+    </div>
+    <div id="fichatecnica" data-role="dialog">
+    	<p>
+    		<h3>ficha tecnica</h3>
+    	</p>
+    	<p class="flotante">
+    		<span class="mostrados">Foto</span><br><img id="mostrarfoto" src="">
+    	</p>
+    	<p>
+    		<span class="mostrados">Marca:</span> <span id="mostrarmarca" class="texto"></span>
+    	</p>
+    	<p>
+    		<span class="mostrados">Año:</span> <span id="mostraranio" class="texto"></span>
+    	</p>
+    	<p>
+    		<span class="mostrados">Potencia:</span> <span id="mostrarpotencia" class="texto"></span>
+    	</p>
+    	<p>
+    		<span class="mostrados">Valor:</span> <span id="mostrarvalor" class="texto"></span>
+    	</p>
+        <input type="button" data-icon="plus" id="comprar" data-idc="" value="comprar">
+        <input type="button" data-icon="forward" id="atras" value="atras">
+        <input type="button" data-icon="home" class="volver" value="home">
+        
+    </div>
+    <div id="descuentos" data-role="dialog">
+    	<p><h2> Actualizador de precios</h2></p>
+        <p> Precios mayores que <input type="text" id="precio_rebajar" placeholder="precio...">
+        <input type="button" data-icon="check" id="rebajar" value="rebajar"></p>
+        
+    	<input type="button" data-icon="home" class="volver" value="home">
+    </div>
+    
+</body>
+
+</html>

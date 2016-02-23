@@ -1,0 +1,21 @@
+a { text-decoration:none }
+
+.flotante{
+	float:right;
+}
+.fotos{
+	margin-left:35%;
+}
+.mostrados{
+	font-size: 30px;
+	font-weight:bold;
+	color:rgba(0,102,255,1);
+}
+.texto{
+	font-size: 20px;
+	font-weight:bold;
+}
+#mostrarfoto{
+	height:150px;
+	width:150px; 
+}
